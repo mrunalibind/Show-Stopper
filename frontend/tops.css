@@ -1,6 +1,80 @@
+#sidebar{
+    margin-top: 50px;
+}
+
 #sidebar input{
     margin-left: 30px;
 }
 #sidebar label{
     margin-left: 10px;
 }
+.card h4{
+    margin-top: 10px;
+}
+#side{
+    top: 50px;
+    background-color: rgb(236, 230, 228);
+    position: sticky;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 720px;
+    width: 400px;
+}
+#display_product{
+    width: 70%;
+    /* margin: auto; */
+    display: grid;
+    margin-left: 20px;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+}
+.card button{
+    display: block;
+    /* margin-top: 10px; */
+    margin: auto;
+    font-weight: 600;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.card button:hover{
+    background-color: rgb(68, 68, 68);
+    color: white;
+    cursor: pointer;
+}
+.card{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-bottom: 20px;
+}
+.card div{
+    object-fit: cover;
+}
+.card p{
+    padding: 5px 0px 5px 20px;
+}
+.card h4{
+    padding: 5px 0px 5px 20px;
+}
+/* .container>div{
+    width: 100%; 
+} */
+#display_product img{
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.4s all ease-in-out;
+
+}
+
+#display_product img:hover{
+    overflow: hidden;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+/* .img_div{
+    overflow: hidden;
+} */
