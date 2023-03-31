@@ -32,7 +32,7 @@
 
 
     <div class="topnav" id="myTopnav">
-        <a href=""><img id="logo" src="./Show.png" alt=""></a>
+        <a href="index.html"><img id="logo" src="./Show.png" alt=""></a>
 
 
        <div class="anc">
@@ -97,7 +97,7 @@
        </div>
 
                 <div class="searchBox">
-                    <input type="search" placeholder="Search">
+                    <input id="search" type="search" placeholder="Search">
                     <i class="fa fa-search"></i>
                 </div>
                 <a href="./login_register.html"><i class="fa-solid fa-user fa-lg"></i></a>
@@ -113,7 +113,7 @@
     
 
     <div id="sidebar" style="display: flex;">
-        <div style="border: 1px solid rgb(137, 137, 137);width: 350px;">
+        <div id="side">
             <br>
             <h4 style="text-align: center;">FILTERS</h4>
             <br>
@@ -149,23 +149,21 @@
                 <br>
                 <h5>COLOR</h5>
                 <br>
-                <input type="checkbox" name="Tops" id=""><label for="">Black</label>
+                <input type="checkbox" value="Black" id="Black"><label for="">Black</label>
                 <br><br>
-                <input type="checkbox" name="Tops" id=""><label for="">White</label>
+                <input type="checkbox" value="White" id="White"><label for="">White</label>
                 <br><br>
-                <input type="checkbox" name="Tops" id=""><label for="">Blue</label>
-                <br><br>
-                <input type="checkbox" name="Tops" id=""><label for="">Tunics</label>
+                <input type="checkbox" value="Blue" id="Blue"><label for="">Blue</label>
                 <br><br>
             </div>
             <hr>
             <div>
                 <br>
-                <h5>Sort By Price</h5>
+                <h5>SORT BY PRICE</h5>
                 <br>
-                <input type="checkbox" name="Tops" id=""><label for="">High To Low</label>
+                <input type="checkbox" value="HTL" name="Tops" id="HTL"><label for="">High To Low</label>
                 <br><br>
-                <input type="checkbox" name="Tops" id=""><label for="">Low To High</label>
+                <input type="checkbox" value="LTH" name="Tops" id="LTH"><label for="">Low To High</label>
                 <br><br>
             </div>
             <hr>
