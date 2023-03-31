@@ -1,0 +1,638 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+/* Navbar */
+.navp{
+  display: none;
+}
+
+.anchi{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  background-color: rgb(206, 35, 35);
+  height: 60px;
+  margin: auto;
+
+}
+.anchi>div:nth-child(1){
+  /* border: 1px solid white; */
+  /* width: 400px; */
+  height: 60px;
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  justify-content: space-evenly;
+}
+.whi{
+  color: black;
+  text-decoration: none;
+  padding: 20px 40px;
+  font-weight: 700;
+  background-color: rgb(255, 255, 255);
+  /* border: 1px solid yellow; */
+}
+.w{
+  border: 1px solid rgba(62, 62, 67, 0.315);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 18px 40px;
+}
+
+.c{
+  /* border: 1px solid white; */
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  text-decoration: none;
+  padding:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#logo{
+  width: 150px;
+}
+.topnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #323232;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: #323232;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+@media screen and (max-width:1465px){
+  .dropdown .dropbtn{
+      font-size: 15px;
+    }
+    .topnav a{
+      font-size: 15px;
+    }
+}
+@media screen and (max-width:1358px){
+  .dropdown .dropbtn{
+      font-size: 10px;
+    }
+    .topnav a{
+      font-size: 10px;
+    }
+}
+
+@media screen and (max-width:1090px){
+  .dropdown .dropbtn{
+      font-size: 8px;
+    }
+    .topnav a{
+      font-size: 8px;
+    }
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a light background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+.dropdown:hover .dropbtn{
+  background-color: rgb(228, 225, 225);
+  border-bottom: 3px solid rgb(206, 35, 35);
+  cursor: pointer;
+  
+}
+
+/* Add a white background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #d8d6d6;
+  color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 1000 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1000px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav{
+      display: flex;
+      flex-direction: column;
+      height: auto;
+
+  }
+  .anchi div{
+      display: none;
+  }
+  .w{
+      display: none;
+  }
+  .whi{
+      display: none
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .navp{
+      display: block;
+      color: white;
+      margin: 10px;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1000px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .offCells img{
+    margin: 0px;
+    cursor: pointer;
+  }
+  .carousel img{
+    width: 100%;
+  }
+  .carousel-cell img{
+    width: 100%;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #logo{
+      width: 200px;
+      height: 88px;
+      object-fit: cover;
+      z-index: 9;
+  }
+  
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  .dropdown .dropbtn{
+      font-size: 17px;
+    }
+    .topnav a{
+      font-size: 17px;
+    }
+}
+
+
+
+
+/* Search Hover */
+.searchBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBox input{
+  background-color: rgb(200, 200, 200);
+  border: none;
+  outline: none;
+  width: 0;
+  padding: 0; 
+  opacity: 0;
+  border-radius: 4px;
+  line-height: 40px;
+  font-size: 18px;
+  color: #000000;
+  transition: all 1s;
+}
+
+.searchBox input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+}
+
+.searchBox i {
+background-color: rgb(255, 255, 255);
+width: 40px;
+height: 40px;
+padding: 9px 10px;
+border-radius: 5px;
+text-align: center;
+line-height: 40px;
+font-size: 20px;
+cursor: pointer;
+transition: all .5s;
+}
+
+.searchBox:hover input{
+  width: 240px;
+  opacity: 1;
+  padding: 5px 20px;
+}
+
+.searchBox:hover i{
+  color: #000000;
+}
+/* Navbar */
+
+ 
+
+
+
+
+/* Courousal */
+
+
+.carousel {
+  /* height: 400px; */
+  /* margin-top: 100px; */
+  width: 100%;
+  background: #EEE;
+}
+
+.carousel-cell {
+  /* margin-top: 50px; */
+
+  width: 100%;
+  /* height: 500px; */
+  /* margin-right: 10px; */
+  margin-top: -200px;
+  background: rgb(255, 255, 255);
+  /* border-radius: 5px; */
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+/* Courousal */
+
+
+/* Collection */
+#coll{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 96%;
+  margin: auto;
+  gap: 20px;
+}
+
+#coll img{
+  width: 100%;
+  cursor: pointer;
+
+}
+
+
+/* Category */
+#cat{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 96%;
+  margin: auto;
+  gap: 20px;
+}
+#cat img{
+  width: 100%;
+  cursor: pointer;
+  transition: 0.4s all ease-in-out;
+}
+#cat>div{
+  overflow: hidden;
+}
+#cat>div:hover img{
+  transform: scale(1.1);
+}
+
+#cat2{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  width: 96%;
+  margin: auto;
+  gap: 20px;
+}
+#cat2 img{
+  width: 100%;
+  cursor: pointer;
+  transition: 0.4s all ease-in-out;
+}
+#cat2>div{
+  overflow: hidden;
+}
+#cat2>div:hover img{
+  transform: scale(1.1);
+}
+/* Category */
+
+
+/* trend */
+#trend{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 96%;
+  margin: auto;
+  gap: 20px;
+}
+#trend img{
+  width: 100%;
+  cursor: pointer;
+}
+/* trend */
+
+
+/* Courousal Official */
+
+.offCells {
+  width: 100%;
+  width: 19.6%;
+  margin-top: -200px;
+  background: rgb(255, 255, 255);
+  /* border-radius: 5px; */
+  counter-increment: carousel-cell;
+}
+.offCells img{
+  cursor: pointer;
+  width: 100%;
+  margin: 40px;
+}
+
+/* cell number */
+.offCells:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+}
+@media screen and (max-width:600px) {
+  h1{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:400px) {
+  h1{
+    font-size: 18px;
+  }
+}
+
+/* Courousal Official */
+
+
+
+/* Top Selling */
+#top{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  width: 96%;
+  margin: auto;
+  gap: 20px;
+}
+@media screen and (max-width:400px) {
+  #top{
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+}
+#top img{
+  width: 100%;
+  cursor: pointer;
+}
+/* Top Selling */
+
+#sara{
+  width: 99%;
+  display: block;
+  margin: auto;
+}
+#mem{
+  width: 99%;
+  display: block;
+  margin: auto;
+}
+#cus{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+#cus span{
+  font-weight: 700;
+}
+
+
+/* Footer */
+footer{
+  background-color: #f2f0f0;
+  padding-top: 40px;
+}
+#foot{
+  
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  
+}
+#foot h4{
+  color: red;
+}
+h5{
+  text-align: center;
+}
+#social{
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+  margin: auto;
+  /* border: 1px solid red; */
+}
+#social div{
+  /* border: 1px solid black; */
+  width: 40%;
+}
+@media screen and (max-width:400px) {
+  #social div{
+    width: 30%;
+  }
+}
+#social img{
+  width: 100%;
+}
+#follow{
+  display: flex;
+  width: 70%;
+  margin: auto;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+#follow img{
+ width: 70%;
+}
+
+/* Acoordian */
+.accordion {
+  background-color: #f2f0f0;
+  color: red;
+  cursor: pointer;
+  padding: 18px;
+  width: 72%;
+  display: block;
+  margin: auto;
+  /* padding: 0 18px; */
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #eee9e9;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  width: 69.7%;
+  margin: auto;
+  padding: 0 18px;
+  background-color: #f2f0f0;
+  display: none;
+  overflow: hidden;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.panel .red{
+  color: red;
+}
+/* Acoordian */
+#app{
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  width: 72%;
+  margin: auto;
+}
+@media screen and (max-width:1400px){
+  #app{
+    flex-direction: column;
+  }
+  #app>div{
+    /* border: 1px solid red; */
+    margin: auto;
+  }
+}
+@media screen and (max-width:750px){
+  #foot{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+  }
+  #app img{
+    width: 60%;
+  }
+  #ship img{
+    width: 5%;
+    
+  }
+}
+#ship img{
+  justify-content: space-between;
+  width: 15%;
+  margin-left: 8px;
+}
+/* Footer */
