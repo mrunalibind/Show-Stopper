@@ -28,7 +28,7 @@ var x=document.getElementById("login");
 						email:registerBtn.emailR.value,
 						password:registerBtn.passR.value
 					}
-					// console.log(obj);
+					console.log(obj);
 
 					fetch(baseURL,{
 						method:"POST",
@@ -72,9 +72,30 @@ var x=document.getElementById("login");
 					.then((res)=>{
 						if(res){
 							alert(res.msg);
-							window.location.href="http://127.0.0.1:5500/torpid-attack-1324/frontend/nav.html"
+							window.location.href="http://127.0.0.1:5500/frontend/index.html"
 						}
 					})
 					.catch((err) => console.log(err));
 			}
 			
+
+
+			// Accordian
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      /* Toggle between adding and removing the "active" class,
+      to highlight the button that controls the panel */
+      this.classList.toggle("active");
+  
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
