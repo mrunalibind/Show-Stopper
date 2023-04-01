@@ -1,8 +1,10 @@
+// let user=document.getElementById("user");
 let express=require("express")
 let userRoute=express.Router();
 let {UserModel}=require("../model/user_model")
 let bcrypt=require("bcrypt")
 let jwt=require("jsonwebtoken")
+
 
 userRoute.post("/register",async(req,res)=>{
     let {name,email,password}=req.body;

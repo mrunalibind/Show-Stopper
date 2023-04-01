@@ -5,14 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/0244637c96.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="tops.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cart.css">
 </head>
 <body>
-    <!-- Navbar -->
     <nav>
         <div class="anchi">
             <div class="anc1">
@@ -97,80 +95,62 @@
        </div>
 
                 <div class="searchBox">
-                    <input id="search" type="search" placeholder="Search">
+                    <input type="search" placeholder="Search">
                     <i class="fa fa-search"></i>
                 </div>
                 <a href="./login_register.html"><i class="fa-solid fa-user fa-lg"></i></a>
                 <a href=""><i class="fa-regular fa-heart fa-lg"></i></a>
-                <a href="cart.html"><i class="fa-solid fa-bag-shopping fa-lg"></i></a>
-                <p style="font-size: 25px;" id="count">0</p>
+                <a href="cart.html"><i class="fa-solid fa-bag-shopping fa-lg"></i>
+                </a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     
     
     </div>
-    <!-- Navbar -->
-    <img width="100%" src="https://prod-img.thesouledstore.com/public/theSoul/uploads/themes/801320230324143640.jpg?format=webp&w=1500&dpr=1.3" alt="">
-    
 
-    <div id="sidebar" style="display: flex;">
-        <div id="side">
+    <div>
+        <div id="empty">
             <br>
-            <h4 style="text-align: center;">FILTERS</h4>
+            <img id="cartIm" src="https://www.nicepng.com/png/detail/322-3224210_your-cart-is-currently-empty-empty-shopping-cart.png" alt="">
             <br>
-            <hr>
+            <h1 style="text-align: center;">Oops! Your cart is empty!</h1>
             <br>
-            <div>
-                <h5>CATEGORIES</h5>
-                <br>
-                <input type="checkbox" value="Tops" id="Tops"><label for="">Tops</label>
-                <br>
-                <br>
-                <input type="checkbox" value="Tshirts" id="Tshirts"><label for="">Tshirts</label>
-                <br>
-                <br>
-                <input type="checkbox" value="Shirts" id="Shirts"><label for="">Shirts</label>
-                <br><br>
+            <h3 style="text-align: center;">Looks like you have't added anything to your cart yet</h3>
+<br>
+            <a href="index.html"><Button>Shop Now</Button></a>
 
-            </div>
-            <hr>
-            <div>
-                <br>
-                <h5>PRICE LIMIT</h5>
-                <br>
-                <input type="checkbox" value="150" id="150"><label for="">RS. 150 to Rs. 300</label>
-                <br><br>
-                <input type="checkbox" value="6000" id="6000"><label for="">Rs. 6000 to Rs. 12000</label>
-                <br><br>
-                <input type="checkbox" value="12000" id="12000"><label for="">Rs. 12000 to Rs. 20000</label>
-                <br><br>
-            </div>
-            <hr>
-            <div>
-                <br>
-                <h5>COLOR</h5>
-                <br>
-                <input type="checkbox" value="Black" id="Black"><label for="">Black</label>
-                <br><br>
-                <input type="checkbox" value="White" id="White"><label for="">White</label>
-                <br><br>
-                <input type="checkbox" value="Blue" id="Blue"><label for="">Blue</label>
-                <br><br>
-            </div>
-            <hr>
-            <div>
-                <br>
-                <h5>SORT BY PRICE</h5>
-                <br>
-                <input type="checkbox" value="HTL" name="Tops" id="HTL"><label for="">High To Low</label>
-                <br><br>
-                <input type="checkbox" value="LTH" name="Tops" id="LTH"><label for="">Low To High</label>
-                <br><br>
-            </div>
-            <hr>
-            
         </div>
-        <div id="display_product"></div>
     </div>
+
+    <div style="display: flex;" id="mainSection">
+        <div id="appendData"></div>
+        <div id="total">
+            <h3 style="text-align: center;">Price Detail <span id="count"></span></h3>
+            <div>
+                <div><p>Cart Total</p></div>
+                <div><p>₹ <span id="totalPrice"></span></p></div>
+            </div>
+            <div>
+                <div><p>GST</p></div>
+                <div><p>₹ 80.20</p></div>
+            </div>
+            <div>
+                <div><p>Shipping Charges</p></div>
+                <div><p><span style="color: rgb(11, 130, 130);font-weight: 600;">FREE</span></p></div>
+            </div>
+            <hr>
+            <br>
+            <div>
+                <div><p>Total Amount</p></div>
+                <div><p>₹ <span id="grand"></span></p></div>
+            </div>
+            <br>
+            <br>
+            <Button id="placeOrder">Place Order</Button>
+        </div>
+    </div>
+
+
+
     <footer style="margin-top: 20px;">
         <div id="foot">
             <div>
@@ -288,5 +268,5 @@
 
 </body>
 <script src="index.js"></script>
-<script src="tops.js"></script>
+<script src="cart.js"></script>
 </html>

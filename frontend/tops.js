@@ -1,6 +1,6 @@
 "https://639af865d514150197465a63.mockapi.io/top"
 
-
+// let user=import { userFolks } from "../backend/routes/user_route";
 let topURL="https://639af865d514150197465a63.mockapi.io/top"
 let mainSection=document.getElementById("display_product");
  fetchRender();
@@ -17,11 +17,13 @@ function fetchRender(){
     })
     
 }
+let cart= JSON.parse(localStorage.getItem("cartitem"))||[];
 
+let count=document.getElementById("count");
+count.innerText=cart.length
 function display(data){
     mainSection.innerHTML="";
-    // let container=document.createElement("div");
-    // container.setAttribute("class","container");
+    
     data.forEach((element) => {
 
         let card=document.createElement("div");
@@ -47,9 +49,8 @@ function display(data){
 
         let button=document.createElement("button");
         button.innerText="Add To Cart";
-
         button.addEventListener("click",()=>{
-            let cart= JSON.parse(localStorage.getItem("cartitem"))||[];
+            // let cart= JSON.parse(localStorage.getItem("cartitem"))||[];
 			let present = false;
 				for(let i=0; i<cart.length; i++){
 				  if(cart[i].id==element.id){
@@ -62,6 +63,7 @@ function display(data){
 				}
                 else{
 					cart.push({...element,quantity:1})
+                    count.innerText=cart.length
 					alert("Your Product is added in Cart")
 						localStorage.setItem("cartitem",JSON.stringify(cart))
 				}
@@ -151,4 +153,33 @@ Blue.addEventListener("change",()=>{
         return element.colour=="Blue"
     })
     display(sortData)
+})
+
+let first=document.getElementById("Tops");
+let second=document.getElementById("Tshirts");
+let third=document.getElementById("Shirts");
+
+first.addEventListener("change",()=>{
+    if(first.checked){
+        let sortData=storeData.filter((element)=>{
+            return first.value==element.type
+        })
+        display(sortData)
+    }
+})
+second.addEventListener("change",()=>{
+    if(second.checked){
+        let sortData=storeData.filter((element)=>{
+            return second.value==element.type
+        })
+        display(sortData)
+    }
+})
+third.addEventListener("change",()=>{
+    if(third.checked){
+        let sortData=storeData.filter((element)=>{
+            return third.value==element.type
+        })
+        display(sortData)
+    }
 })
