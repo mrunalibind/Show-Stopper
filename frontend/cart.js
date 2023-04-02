@@ -109,3 +109,23 @@ function display(arr){
     grand.innerText=((Number(totalPrice.innerText))+80.20).toFixed(2)
 }
 
+let confirm=document.getElementById("confirm");
+let succAnc=document.getElementById("succAnc")
+
+confirm.addEventListener("click",()=>{
+    alert("Your Payment is Successful, Thank you for Purchasing")
+    succAnc.setAttribute("href","./index.html")
+    whole.innerHTML=""
+    localStorage.clear("cartitem")
+})
+
+document.querySelector("#placeOrder").addEventListener("click",()=>{
+    document.querySelector(".popup").classList.add("active");
+    
+})
+
+document.querySelector(".popup .close-btn").addEventListener("click",()=>{
+    document.querySelector(".popup").classList.remove("active");
+
+})
+
