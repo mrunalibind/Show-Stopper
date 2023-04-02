@@ -29,6 +29,9 @@
     grid-template-columns: repeat(4,1fr);
     gap: 50px;
 }
+.anc{
+    text-decoration: none;
+}
 @media screen  and (max-width:1200px){
     #display_product{
         grid-template-columns: repeat(3,1fr);
@@ -69,9 +72,11 @@
     object-fit: cover;
 }
 .card p{
+    color: black;
     padding: 5px 0px 5px 20px;
 }
 .card h4{
+    color: black;
     padding: 5px 0px 5px 20px;
 }
 /* .container>div{

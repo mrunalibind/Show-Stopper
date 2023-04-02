@@ -69,18 +69,20 @@ function display(data){
 				}
         })
 
-        // button.addEventListener("click",()=>{
-        //     let {auth}=require("../backend/middleware/auth_midd");
-        //     auth()
-        //     console.log("Working");
-        // })
-
         div_btn.append(button)
 
         card.append(card_img,pattern,title,rupees,div_btn)
+
+        card.addEventListener("click",()=>{
+            card.setAttribute("a")
+        })
+        let a=document.createElement("a");
+        a.setAttribute("class","anc")
+        // a.setAttribute("href","./description.html")
         
+        a.append(card);
         // container.append(card)
-        mainSection.append(card)
+        mainSection.append(a)
     })
     
     
