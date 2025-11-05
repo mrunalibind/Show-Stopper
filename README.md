@@ -1,4 +1,4 @@
-# 💃 Show-Stopper
+<img width="1899" height="815" alt="Screenshot 2025-11-05 154026" src="https://github.com/user-attachments/assets/5a392eb7-c0af-43d7-920c-5af3133e9f24" /># 💃 Show-Stopper
 ✨ The **Show-Stopper** constantly adapts to provide you with the **freshest fashion products** and **trendiest designs**.  
 It’s a full-fledged **E-Commerce website** for online clothing and accessories, built in **5 days** with a powerful backend and a clean frontend.
 
@@ -9,7 +9,11 @@ It’s a full-fledged **E-Commerce website** for online clothing and accessories
 **Show-Stopper** is your one-stop online fashion destination offering stylish clothing, trendy accessories, and more.  
 The platform combines a dynamic **Node.js + Express + MongoDB** backend with a simple **HTML** frontend to deliver a smooth and secure shopping experience.
 
+<img width="1919" height="846" alt="Screenshot 2025-11-05 154131" src="https://github.com/user-attachments/assets/02a88ebc-2e45-45c2-90d3-8b5c19c84ebb" />
+<img width="1899" height="815" alt="Screenshot 2025-11-05 154026" src="https://github.com/user-attachments/assets/31dde2aa-8de3-4623-99a8-5ca8af780306" />
+<img width="1893" height="842" alt="Screenshot 2025-11-05 154100" src="https://github.com/user-attachments/assets/454f5a1d-8dcd-4b1d-ae11-5046bda61699" />
 ---
+
 
 ## ⚙️ Features
 
